@@ -1,10 +1,15 @@
 <?php
 
-for ($i = 1; $i <= 10; $i++) {
-    for ($col = 1 ; $col <= $i ; $col++) {
-        echo $col . " " ;
-    }
+function Cetakangka($angka) {
 
-    echo "<br>" ;
-
+    for ($i = 1; $i <= $angka; $i++){
+        for ($j = 1 ; $j <= $i ; $j++) {
+            echo $j . " " ;
+        }
+        echo "<hr>" ;     
+    }       
 }
+
+echo Cetakangka(20);
+
+?>
